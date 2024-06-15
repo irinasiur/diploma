@@ -80,9 +80,21 @@ diploma/
 
 5. Примените миграции базы данных:
 
+- Для Unix-подобных систем (Linux, macOS):
+
     ```sh
+    export PYTHONPATH=$(pwd)
     alembic upgrade head
     ```
+
+- Для Windows:
+
+    ```sh
+    set PYTHONPATH=%cd%
+    alembic upgrade head
+    ```
+
+
 
 ## Запуск приложения
 
